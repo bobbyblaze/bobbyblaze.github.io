@@ -1,13 +1,11 @@
 body{
-    background-color: hsl(220, 15%, 55%);
+    background-color: hsl(215, 46%, 89%);
     position: relative;
     scroll-behavior: none;
+    color: hsl(220, 15%, 55%);
   }
   .modal h1 {font-size: 24px; font-weight: 700; text-align: center;}
   .modal p {font-size: 15px; font-weight: 500; text-align: center;}
-
-  .attribution { font-size: 11px; text-align: center; color: white; padding: 20px}
-  .attribution a { color: hsl(221, 100%, 48%) }
   
   .modal {
       font-family: outfit;
