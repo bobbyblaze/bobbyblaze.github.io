@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
 body {
-    font-family: outfit;
+    font-family: 'Outfit', sans-serif;
     background-color: rgb(76, 76, 76);
 }
 
@@ -33,6 +35,8 @@ h1 {
 }
 
 .grid #qr {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
     width: 200px;
     height: 100px;
     background-color: white;
