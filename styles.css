@@ -1,0 +1,23 @@
+body {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    scroll-behavior: none;
+}
+
+button {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    background-color: rgb(50, 238, 255);
+    border-radius: 20px;
+    border: 0;
+}
