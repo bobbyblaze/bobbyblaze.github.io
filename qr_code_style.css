@@ -2,12 +2,14 @@
 
 body {
   background-color: hsl(215, 46%, 89%);
-  position: relative;
-  scroll-behavior: none;
   color: hsl(220, 15%, 55%);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0;
 }
 
-.modal {
+main {
   font-family: 'Outfit', sans-serif;
   height: 520px;
   width: 350px;
@@ -17,16 +19,9 @@ body {
   flex-direction: column;
   align-items: center;
   padding-block: 15px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  vertical-align: center;
 }
 
-.modal .text {
+main .text {
   font-family: 'Outfit', sans-serif;
   height: 100%;
   width: 290px;
@@ -35,10 +30,10 @@ body {
   justify-content: center;
 }
 
-.modal h1 {font-size: 24px; font-weight: 700; text-align: center;}
-.modal p {font-size: 15px; font-weight: 400; text-align: center;}
+main h1 {font-size: 24px; font-weight: 700; text-align: center;}
+main p {font-size: 15px; font-weight: 400; text-align: center;}
 
-.modal img {border-radius: 15px; width: 320px;}
+main img {border-radius: 15px; width: 320px;}
 
 
 @media only screen and (min-width: 1441px) {
