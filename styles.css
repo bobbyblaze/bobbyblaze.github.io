@@ -28,34 +28,51 @@ h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 30px;
+    place-items: center;
 }
 
-.grid #qr {
+.hex {
+    float: left;
+    margin-left: 8px;
+    margin-bottom: -43px;
+}
+
+.hex .top {
+    width: 0;
+    border-bottom: 50px solid rgb(255, 255, 255);
+    border-left: 72px solid transparent;
+    border-right: 72px solid transparent;
+}
+
+.hex .middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 144px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+}
+
+.hex .bottom {
+    width: 0;
+    border-top: 50px solid rgb(255, 255, 255);
+    border-left: 72px solid transparent;
+    border-right: 72px solid transparent;
+}
+
+.hex-row {
+    clear: left;
+}
+
+.hex .middle a {
     font-family: 'Outfit', sans-serif;
-    font-weight: 400;
-    width: 200px;
-    height: 100px;
-    background-color: white;
-    border-radius: 20px;
-    border: 0;
-    justify-self: center;
-}
-
-.grid .notfound {
-    width: 200px;
-    height: 100px;
-    background-color: rgba(162, 162, 162, 0.314);
-    border-radius: 20px;
-    border: 0;
-    justify-self: center;
-}
-
-.grid button a {
-    font-size: 20px;
-    text-decoration: none;
+    font-weight: 700;
     color: rgb(76, 76, 76);
+    text-decoration: none;
+    text-align: center;
 }
+
+#qr-code .top {border-bottom: 50px solid rgb(54, 133, 255)}
+#qr-code .middle {background: rgb(54, 133, 255)}
+#qr-code .middle a {color: white; text-shadow: #4268a1 3px 3px 5px;}
+#qr-code .bottom {border-top: 50px solid rgb(54, 133, 255)}
