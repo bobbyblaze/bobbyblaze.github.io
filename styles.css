@@ -115,8 +115,13 @@ body {
 
 #product-component .top {border-bottom: 50px solid hsl(158, 36%, 37%);transition: all 0.2s;}
 #product-component .middle {background: hsl(158, 36%, 37%);transition: all 0.2s;}
-#product-component a {color: white; text-shadow: hsl(158, 37%, 28%) 3px 3px 5px;transition: all 0.2s;}
+#product-component a {color: white; text-shadow: hsl(158, 37%, 25%) 3px 3px 5px;transition: all 0.2s;}
 #product-component .bottom {border-top: 50px solid hsl(158, 36%, 37%);transition: all 0.2s;}
+
+#news-homepage .top {border-bottom: 50px solid hsl(5, 85%, 63%);transition: all 0.2s;}
+#news-homepage .middle {background: hsl(5, 85%, 63%);transition: all 0.2s;}
+#news-homepage a {color: white; text-shadow: hsl(5, 51%, 46%) 3px 3px 5px;transition: all 0.2s;}
+#news-homepage .bottom {border-top: 50px solid hsl(5, 85%, 63%);transition: all 0.2s;}
 
 .hex:hover {
     animation: float 2s ease-in-out infinite;
