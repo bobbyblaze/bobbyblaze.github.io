@@ -47,10 +47,6 @@ h1 {
     line-height: 1;
 }
 
-h4 {
-    margin: 0;
-}
-
 p {
     font-size: 14px;
     color: hsl(233, 4%, 50%);
@@ -90,8 +86,9 @@ button {
     align-items: center;
     gap: 10px;
     color: white;
-    font-weight: 500;
-    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
     background-color: hsl(158, 36%, 37%);
     width: 100%;
     border-radius: 6px;
