@@ -5,13 +5,46 @@ body {
     background-color: rgb(76, 76, 76);
 }
 
-h1 {
+.headings {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    align-content: center;
+    justify-content: center;
+    margin-block: 70px;
+}
+
+#first {
+    position: absolute;
+    visibility: visible;
     font-size: 700;
     color: rgb(255, 255, 255);
     letter-spacing: 3px;
-    margin-block: 70px;
-    text-align: center;
     text-shadow: #050507 3px 3px 5px;
+    max-width: 650px;
+    border-image: linear-gradient(181deg, white, black) 1;
+    border-right: 4px solid rgb(255, 255, 255);
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter-first 14s steps(90) normal infinite, blinkTextCursor 0.7s infinite;
+}
+
+#second {
+    position: absolute;
+    height: 0;
+    font-size: 700;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    text-shadow: #050507 3px 3px 5px;
+    max-width: 412px;
+    border-image: linear-gradient(181deg, white, black) 1;
+    border-right: 4px solid rgb(255, 255, 255);
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter-second 14s steps(90) normal infinite, blinkTextCursor 0.7s infinite;
 }
 
 .max-width {
@@ -25,6 +58,7 @@ h1 {
     height: 100%;
     max-width: 900px;
     max-height: 600px;
+
 }
 
 .grid {
@@ -48,7 +82,7 @@ h1 {
 
 .hex .middle {
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     width: 144px;
     height: 80px;
@@ -66,7 +100,7 @@ h1 {
     clear: left;
 }
 
-.hex .middle a {
+.hex a {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
     color: rgb(76, 76, 76);
@@ -76,14 +110,77 @@ h1 {
 
 #qr-code .top {border-bottom: 50px solid rgb(54, 133, 255);transition: all 0.2s;}
 #qr-code .middle {background: rgb(54, 133, 255);transition: all 0.2s;}
-#qr-code .middle a {color: white; text-shadow: #4268a1 3px 3px 5px;transition: all 0.2s;}
+#qr-code a {color: white; text-shadow: #4268a1 3px 3px 5px;transition: all 0.2s;}
 #qr-code .bottom {border-top: 50px solid rgb(54, 133, 255);transition: all 0.2s;}
 
-#qr-code{
-    transition: all .3s ease-in-out;
-}
-#qr-code:hover{
-    transform: scale(1.4);
-    transition: all .2s ease-in-out;
+.hex:hover {
+    animation: float 2s ease-in-out infinite;
     z-index: 1;
+}
+
+@keyframes float {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1.01);
+    }
+}
+
+@keyframes typewriter-first {
+    0% {
+        width: 0;
+    }
+    10% {
+        width: 650px;
+    }
+    40% {
+        width: 650px;
+    }
+    49% {
+        width: 1px;
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes typewriter-second {
+    0% {
+        height: 0;
+    }
+    50%{
+        height: 0;
+    }
+    51% {
+        width: 0;
+        height: auto;
+        visibility: visible;
+    }
+    60% {
+        width: 413px;
+    }
+    90% {
+        width: 413px;
+    }
+    100% {
+        height: auto;
+        width: 1px;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-image: linear-gradient(181deg, white, black) 1;
+    }
+    to {
+        border-image: linear-gradient(1deg, transparent, transparent) 1;
+        border-right-color: transparent;
+    }
 }
