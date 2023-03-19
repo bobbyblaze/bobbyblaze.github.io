@@ -113,6 +113,11 @@ body {
 #qr-code a {color: white; text-shadow: #4268a1 3px 3px 5px;transition: all 0.2s;}
 #qr-code .bottom {border-top: 50px solid rgb(54, 133, 255);transition: all 0.2s;}
 
+#product-component .top {border-bottom: 50px solid hsl(158, 36%, 37%);transition: all 0.2s;}
+#product-component .middle {background: hsl(158, 36%, 37%);transition: all 0.2s;}
+#product-component a {color: white; text-shadow: hsl(158, 37%, 28%) 3px 3px 5px;transition: all 0.2s;}
+#product-component .bottom {border-top: 50px solid hsl(158, 36%, 37%);transition: all 0.2s;}
+
 .hex:hover {
     animation: float 2s ease-in-out infinite;
     z-index: 1;
