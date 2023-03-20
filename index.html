@@ -10,10 +10,11 @@
   <title>Projects</title>
 </head>
 <body>
+  <div class="cursor"></div>
   <div class="max-width">
     <div class="headings">
       <h1 id="first">Designs from Frontend Mentor site...</h1>
-      <h1 id="second">Made by Róbert Blažek.</h1>
+      <h1 id="second">Coded by Róbert Blažek.</h1>
     </div>
     <div class="grid">
       <div class="hex-row even">
@@ -73,5 +74,24 @@
       </div>
     </div>
   </div>
+
+  <script>
+
+    const cursor = document.querySelector('.cursor');
+    const moveBy = 10;
+
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: "+(e.pageY-11)+"px; left: "+(e.pageX-11)+"px;");
+    })
+
+    document.addEventListener('click', () => {
+      cursor.classList.add("expand");
+      
+      setTimeout(() => {
+        cursor.classList.remove("expand");
+      }, 500)
+    })
+
+  </script>
 </body>
 </html>
