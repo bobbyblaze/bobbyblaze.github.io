@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/binary-icon-32x32.png">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
   
   <title>Projects</title>
@@ -74,24 +75,6 @@
       </div>
     </div>
   </div>
-
-  <script>
-
-    const cursor = document.querySelector('.cursor');
-    const moveBy = 10;
-
-    document.addEventListener('mousemove', e => {
-      cursor.setAttribute("style", "top: "+(e.pageY-11)+"px; left: "+(e.pageX-11)+"px;");
-    })
-
-    document.addEventListener('click', () => {
-      cursor.classList.add("expand");
-      
-      setTimeout(() => {
-        cursor.classList.remove("expand");
-      }, 500)
-    })
-
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

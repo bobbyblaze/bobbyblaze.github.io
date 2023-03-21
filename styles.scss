@@ -26,46 +26,6 @@ body {
     animation: click 0.5s forwards;
 }
 
-.headings {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100px;
-    align-content: center;
-    justify-content: center;
-    margin-block: 70px;
-}
-
-#first {
-    position: absolute;
-    visibility: visible;
-    font-size: 700;
-    color: rgb(255, 255, 255);
-    letter-spacing: 3px;
-    text-shadow: #050507 3px 3px 5px;
-    max-width: 650px;
-    border-image: linear-gradient(181deg, white, black) 1;
-    border-right: 4px solid rgb(255, 255, 255);
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typewriter-first 14s steps(90) normal infinite, blinkTextCursor 0.7s infinite;
-}
-
-#second {
-    position: absolute;
-    height: 0;
-    font-size: 700;
-    color: rgb(255, 255, 255);
-    letter-spacing: 3px;
-    text-shadow: #050507 3px 3px 5px;
-    max-width: 430px;
-    border-image: linear-gradient(181deg, white, black) 1;
-    border-right: 4px solid rgb(255, 255, 255);
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typewriter-second 14s steps(90) normal infinite, blinkTextCursor 0.7s infinite;
-}
-
 .max-width {
     position: relative;
     left: 0;
@@ -80,70 +40,118 @@ body {
 
 }
 
+.headings {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-block: 70px;
+
+    #first {
+        max-width: 650px;
+        position: absolute;
+        visibility: visible;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.6;
+        letter-spacing: 3px;
+        color: rgb(255, 255, 255);
+        text-shadow: #050507 3px 3px 5px;
+        border-image: linear-gradient(181deg, white, black) 1;
+        border-right: 4px solid rgb(255, 255, 255);
+        animation: typewriter-first 14s steps(90) normal infinite, blinkTextCursor 0.7s infinite;
+    }
+
+    #second {
+        height: 0;
+        max-width: 430px;
+        position: absolute;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.6;
+        letter-spacing: 3px;
+        color: rgb(255, 255, 255);
+        text-shadow: #050507 3px 3px 5px;
+        border-image: linear-gradient(181deg, white, black) 1;
+        border-right: 4px solid rgb(255, 255, 255);
+        animation: typewriter-second 14s steps(90) normal infinite, blinkTextCursor 0.7s infinite;
+    }
+}
+
 .grid {
     display: grid;
     place-items: center;
     filter: drop-shadow(0 3mm 3mm rgb(29, 29, 29));
-}
 
-.hex {
-    float: left;
-    margin-left: 8px;
-    margin-bottom: -43px;
-}
+    .hex-row {
+        clear: left;
+    }
 
-.hex .top {
-    width: 0;
-    border-bottom: 50px solid rgb(255, 255, 255);
-    border-left: 72px solid transparent;
-    border-right: 72px solid transparent;
-}
+    .hex {
+        float: left;
+        margin-left: 8px;
+        margin-bottom: -43px;
+    
+        .top {
+            width: 0;
+            border-bottom: 50px solid rgb(255, 255, 255);
+            border-left: 72px solid transparent;
+            border-right: 72px solid transparent;
+        }
+        .middle {
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            width: 144px;
+            height: 80px;
+            background: rgb(255, 255, 255);
+        }
+        .bottom {
+            width: 0;
+            border-top: 50px solid rgb(255, 255, 255);
+            border-left: 72px solid transparent;
+            border-right: 72px solid transparent;
+        }
+    
+        a {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            color: rgb(76, 76, 76);
+            text-decoration: none;
+            text-align: center;
+        }
 
-.hex .middle {
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    width: 144px;
-    height: 80px;
-    background: rgb(255, 255, 255);
-}
+        &:hover, &:active {
+            animation: float 2s ease-in-out infinite;
+        }
+    }
 
-.hex .bottom {
-    width: 0;
-    border-top: 50px solid rgb(255, 255, 255);
-    border-left: 72px solid transparent;
-    border-right: 72px solid transparent;
-}
+    #qr-code {
+        a {color: white; text-shadow: #4268a1 3px 3px 5px;transition: all 0.2s;}
+        .top {border-bottom: 50px solid rgb(54, 133, 255);transition: all 0.2s;}
+        .middle {background: rgb(54, 133, 255);transition: all 0.2s;}
+        .bottom {border-top: 50px solid rgb(54, 133, 255);transition: all 0.2s;}
+    }
 
-.hex-row {
-    clear: left;
-}
+    #product-component {
+        a {color: white; text-shadow: hsl(158, 37%, 25%) 3px 3px 5px;transition: all 0.2s;}
+        .top {border-bottom: 50px solid hsl(158, 36%, 37%);transition: all 0.2s;}
+        .middle {background: hsl(158, 36%, 37%);transition: all 0.2s;}
+        .bottom {border-top: 50px solid hsl(158, 36%, 37%);transition: all 0.2s;}
+    } 
 
-.hex a {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700;
-    color: rgb(76, 76, 76);
-    text-decoration: none;
-    text-align: center;
-}
-
-#qr-code .top {border-bottom: 50px solid rgb(54, 133, 255);transition: all 0.2s;}
-#qr-code .middle {background: rgb(54, 133, 255);transition: all 0.2s;}
-#qr-code a {color: white; text-shadow: #4268a1 3px 3px 5px;transition: all 0.2s;}
-#qr-code .bottom {border-top: 50px solid rgb(54, 133, 255);transition: all 0.2s;}
-
-#product-component .top {border-bottom: 50px solid hsl(158, 36%, 37%);transition: all 0.2s;}
-#product-component .middle {background: hsl(158, 36%, 37%);transition: all 0.2s;}
-#product-component a {color: white; text-shadow: hsl(158, 37%, 25%) 3px 3px 5px;transition: all 0.2s;}
-#product-component .bottom {border-top: 50px solid hsl(158, 36%, 37%);transition: all 0.2s;}
-
-#news-homepage .top {border-bottom: 50px solid hsl(5, 85%, 63%);transition: all 0.2s;}
-#news-homepage .middle {background: hsl(5, 85%, 63%);transition: all 0.2s;}
-#news-homepage a {color: white; text-shadow: hsl(5, 51%, 46%) 3px 3px 5px;transition: all 0.2s;}
-#news-homepage .bottom {border-top: 50px solid hsl(5, 85%, 63%);transition: all 0.2s;}
-
-.hex:hover {
-    animation: float 2s ease-in-out infinite;
+    #news-homepage {
+        a {color: white; text-shadow: hsl(5, 51%, 46%) 3px 3px 5px;transition: all 0.2s;}
+        .top {border-bottom: 50px solid hsl(5, 85%, 63%);transition: all 0.2s;}
+        .middle {background: hsl(5, 85%, 63%);transition: all 0.2s;}
+        .bottom {border-top: 50px solid hsl(5, 85%, 63%);transition: all 0.2s;}
+    } 
 }
 
 @keyframes cursorAnim {
