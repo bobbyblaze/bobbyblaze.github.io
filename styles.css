@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+*, html {
+  scroll-behavior: smooth !important;
+  scroll-snap-type: y mandatory;
+}
+
 body {
   font-family: "Outfit", sans-serif;
-  background-color: rgb(76, 76, 76);
   cursor: none;
-  scroll-behavior: none;
-  overflow: hidden;
+}
+
+section {
+  scroll-snap-stop: normal;
+  scroll-snap-align: center;
 }
 
 .cursor {
@@ -19,6 +26,75 @@ body {
   pointer-events: none;
   animation: cursorAnim 4s infinite;
   filter: drop-shadow(0 0mm 4mm rgb(238, 219, 174));
+  z-index: 10;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  padding-inline: 50px;
+  max-width: 1200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+header span {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+header nav a {
+  gap: 70px;
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right, #0f0c29, #3d378c, #24243e);
+  scroll-snap-align: center;
+}
+.main main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 0;
+  margin: auto;
+  max-width: 1200px;
+  padding-inline: 50px;
+  width: 100%;
+}
+.main main #left-h1 {
+  text-align: left;
+  color: white;
+  font-weight: 700;
+  font-size: 48px;
+  z-index: 0;
+  line-height: 1.2;
+}
+.main main #right-h1 {
+  text-align: right;
+  color: white;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  z-index: 0;
 }
 
 .expand {
@@ -35,7 +111,7 @@ body {
   width: 100%;
   height: 100%;
   max-width: 900px;
-  max-height: 600px;
+  max-height: 650px;
 }
 
 .headings {
@@ -45,7 +121,7 @@ body {
   height: 100px;
   align-items: center;
   justify-content: center;
-  margin-block: 70px;
+  margin-bottom: 70px;
 }
 .headings #first {
   max-width: 650px;
@@ -82,26 +158,40 @@ body {
   animation: typewriter-second 14s steps(90) normal infinite, blinkTextCursor 0.7s infinite;
 }
 
-.grid {
+.projects {
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  scroll-snap-align: center;
+  background-color: rgb(76, 76, 76);
+  opacity: 0.8;
+  background-image: radial-gradient(black 1px, transparent 0);
+  background-size: 40px 40px;
+}
+.projects .grid {
   display: grid;
   place-items: center;
   filter: drop-shadow(0 3mm 3mm rgb(29, 29, 29));
+  margin-bottom: 70px;
 }
-.grid .hex-row {
+.projects .grid .hex-row {
   clear: left;
 }
-.grid .hex {
+.projects .grid .hex {
   float: left;
   margin-left: 8px;
   margin-bottom: -43px;
 }
-.grid .hex .top {
+.projects .grid .hex .top {
   width: 0;
   border-bottom: 50px solid rgb(255, 255, 255);
   border-left: 72px solid transparent;
   border-right: 72px solid transparent;
 }
-.grid .hex .middle {
+.projects .grid .hex .middle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,70 +199,70 @@ body {
   height: 80px;
   background: rgb(255, 255, 255);
 }
-.grid .hex .bottom {
+.projects .grid .hex .bottom {
   width: 0;
   border-top: 50px solid rgb(255, 255, 255);
   border-left: 72px solid transparent;
   border-right: 72px solid transparent;
 }
-.grid .hex a {
+.projects .grid .hex a {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
   color: rgb(76, 76, 76);
   text-decoration: none;
   text-align: center;
 }
-.grid .hex:hover, .grid .hex:active {
+.projects .grid .hex:hover, .projects .grid .hex:active {
   animation: float 2s ease-in-out infinite;
 }
-.grid #qr-code a {
+.projects .grid #qr-code a {
   color: white;
   text-shadow: #4268a1 3px 3px 5px;
   transition: all 0.2s;
 }
-.grid #qr-code .top {
+.projects .grid #qr-code .top {
   border-bottom: 50px solid rgb(54, 133, 255);
   transition: all 0.2s;
 }
-.grid #qr-code .middle {
+.projects .grid #qr-code .middle {
   background: rgb(54, 133, 255);
   transition: all 0.2s;
 }
-.grid #qr-code .bottom {
+.projects .grid #qr-code .bottom {
   border-top: 50px solid rgb(54, 133, 255);
   transition: all 0.2s;
 }
-.grid #product-component a {
+.projects .grid #product-component a {
   color: white;
   text-shadow: hsl(158, 37%, 25%) 3px 3px 5px;
   transition: all 0.2s;
 }
-.grid #product-component .top {
+.projects .grid #product-component .top {
   border-bottom: 50px solid hsl(158, 36%, 37%);
   transition: all 0.2s;
 }
-.grid #product-component .middle {
+.projects .grid #product-component .middle {
   background: hsl(158, 36%, 37%);
   transition: all 0.2s;
 }
-.grid #product-component .bottom {
+.projects .grid #product-component .bottom {
   border-top: 50px solid hsl(158, 36%, 37%);
   transition: all 0.2s;
 }
-.grid #news-homepage a {
+.projects .grid #news-homepage a {
   color: white;
   text-shadow: hsl(5, 51%, 46%) 3px 3px 5px;
   transition: all 0.2s;
 }
-.grid #news-homepage .top {
+.projects .grid #news-homepage .top {
   border-bottom: 50px solid hsl(5, 85%, 63%);
   transition: all 0.2s;
 }
-.grid #news-homepage .middle {
+.projects .grid #news-homepage .middle {
   background: hsl(5, 85%, 63%);
   transition: all 0.2s;
 }
-.grid #news-homepage .bottom {
+.projects .grid #news-homepage .bottom {
   border-top: 50px solid hsl(5, 85%, 63%);
   transition: all 0.2s;
 }
