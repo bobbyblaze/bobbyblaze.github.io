@@ -103,40 +103,76 @@ header {
             line-height: 1.2;
         }
 
+        a {
+            width: 100%;
+            height: 100%;
+        }
+
         .web-window {
             width: 100%;
             height: 300px;
             opacity: 1;
             position: relative;
             z-index: 0;
+            filter: drop-shadow(0 3mm 2mm #24243e);
 
-            &::before {
-                content: "";
-                background-image: url('./images/placeholder-image.jpg');
-                background-size: cover;
-                background-position: center;
-                position: absolute;
-                top: 0px;
-                right: 0px;
-                bottom: 0px;
-                left: 0px;
-                opacity: 0.5;
-            }
-
-            .one {
+            &.one {
                 grid-area: 1 / 2 / 2 / 3;
+
+                &::before {
+                    content: "";
+                    background-image: url('./images/ziarce.png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    opacity: 0.5;
+                }
             }
-            .two {
+            &.two {
                 grid-area: 2 / 1 / 3 / 2;
+
+                &::before {
+                    content: "";
+                    background-image: url('./images/placeholder-image.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    opacity: 0.5;
+                }
             }
-            .three {
+            &.three {
                 grid-area: 2 / 2 / 3 / 3;
+
+                &::before {
+                    content: "";
+                    background-image: url('./images/placeholder-image.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    opacity: 0.5;
+                }
             }
 
             .description {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                gap: 20px;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -155,6 +191,7 @@ header {
                     text-align: center;
                     color: white;
                     line-height: 1.2;
+                    filter: drop-shadow(1mm 1mm 1mm #19192b);
                 }
                 h2 {
                     font-weight: 700;
