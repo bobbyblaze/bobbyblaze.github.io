@@ -90,6 +90,7 @@ h1 {
     width: 53%;
     padding: 15px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .new {
@@ -148,13 +149,28 @@ h5 {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    width: 65%;
+    width: 70%;
     gap: 10px;
 }
 
 .article img {
     height: 100%;
-    width: 35%;
+    width: 30%;
     object-fit: fit;
 }
 
+/* on hover */
+
+nav a:hover, nav a:active, h5:hover, h5:active {
+    color: hsl(6, 69%, 54%);
+    cursor: pointer;
+}
+
+h4:hover, h4:active {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.read-more button:hover, .read-more button:active {
+    background-color: black;
+}
