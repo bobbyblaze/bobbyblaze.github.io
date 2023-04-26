@@ -223,7 +223,7 @@ header nav img {
   margin-bottom: 70px;
 }
 .headings #first {
-  max-width: 650px;
+  max-width: 690px;
   position: absolute;
   visibility: visible;
   white-space: nowrap;
@@ -365,6 +365,23 @@ header nav img {
   border-top: 50px solid hsl(5, 85%, 63%);
   transition: all 0.2s;
 }
+.projects .grid #combinations a {
+  color: white;
+  text-shadow: hsl(281, 97%, 37%) 3px 3px 5px;
+  transition: all 0.2s;
+}
+.projects .grid #combinations .top {
+  border-bottom: 50px solid hsl(281, 100%, 45%);
+  transition: all 0.2s;
+}
+.projects .grid #combinations .middle {
+  background: hsl(281, 100%, 45%);
+  transition: all 0.2s;
+}
+.projects .grid #combinations .bottom {
+  border-top: 50px solid hsl(281, 100%, 45%);
+  transition: all 0.2s;
+}
 
 @keyframes cursorAnim {
   0% {
@@ -404,10 +421,10 @@ header nav img {
     width: 0;
   }
   10% {
-    width: 650px;
+    width: 690px;
   }
   40% {
-    width: 650px;
+    width: 690px;
   }
   49% {
     width: 1px;
@@ -485,7 +502,7 @@ header nav img {
   }
   .headings #first {
     font-size: 22px;
-    max-width: 400px;
+    max-width: 450px;
   }
   .headings #second {
     font-size: 22px;

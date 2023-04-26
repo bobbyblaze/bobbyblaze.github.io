@@ -234,7 +234,7 @@ header {
     margin-bottom: 70px;
 
     #first {
-        max-width: 650px;
+        max-width: 690px;
         position: absolute;
         visibility: visible;
         white-space: nowrap;
@@ -350,6 +350,13 @@ header {
             .middle {background: hsl(5, 85%, 63%);transition: all 0.2s;}
             .bottom {border-top: 50px solid hsl(5, 85%, 63%);transition: all 0.2s;}
         } 
+
+        #combinations {
+            a {color: white; text-shadow: hsl(281, 97%, 37%) 3px 3px 5px;transition: all 0.2s;}
+            .top {border-bottom: 50px solid hsl(281, 100%, 45%);transition: all 0.2s;}
+            .middle {background: hsl(281, 100%, 45%);transition: all 0.2s;}
+            .bottom {border-top: 50px solid hsl(281, 100%, 45%);transition: all 0.2s;}
+        } 
     }
 }
 
@@ -396,10 +403,10 @@ header {
         width: 0;
     }
     10% {
-        width: 650px;
+        width: 690px;
     }
     40% {
-        width: 650px;
+        width: 690px;
     }
     49% {
         width: 1px;
@@ -479,7 +486,7 @@ header {
 
         #first {
             font-size: 22px;
-            max-width: 400px;
+            max-width: 450px;
         }
         #second {
             font-size: 22px;
