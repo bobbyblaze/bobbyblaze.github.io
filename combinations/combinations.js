@@ -187,7 +187,7 @@ function calculateSwitched(dropdownValues){
     || dropdownValues == options[27] //benzodiazepines mdma
     || dropdownValues == options[28] //benzodiazepines mushrooms
     ) {
-    finalVerdict = "Nízke riziko a zníženie"
+    finalVerdict = "Nízke riziko a zníženie účinku"
 } else if (
        dropdownValues == options[0]  //alkohol amphetamines
     || dropdownValues == options[8]  //alcohol mdma
