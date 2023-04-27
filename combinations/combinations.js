@@ -232,7 +232,10 @@ function calculateSwitched(dropdownValues){
 
     return finalVerdict;
 }
-
+const substance1 = document.getElementById("substance1");
+const substance2 = document.getElementById("substance2");
+const description1 = document.getElementById("substance1text");
+const description2 = document.getElementById("substance2text");
 const outputElement = document.getElementById("verdict");
 const element = document.getElementById("calculate");
 element.addEventListener("click", function() {
@@ -242,5 +245,7 @@ element.addEventListener("click", function() {
     } else {
         calculate(primarySelected + secondarySelected);
         outputElement.innerHTML = finalVerdict;
+        substance1.innerHTML = primarySelected;
+        substance2.innerHTML = secondarySelected;
     }
 });

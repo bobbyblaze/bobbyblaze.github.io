@@ -8,6 +8,8 @@ body {
     justify-items: center;
     height: 100vh;
     background-image: url(images/background.jpeg);
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 
 main {
@@ -136,12 +138,35 @@ button {
 .messageHolder {
     grid-area: 1 / 3 / 5 / 4;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
     justify-content: center;
+    padding-inline: 40px;
     width: 100%;
     height: 100%;
     background-color: hsla(246, 100%, 68%, 0.776);
     border-radius: 0 10px 10px 0;
+}
+
+h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: left;
+    margin-block: 20px;
+}
+
+p {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: left;
+}
+
+.divider {
+    border: 1px solid white;
+    width: 100%;
+    margin-block: 70px;
 }
 
 .messageHolder h3 {
