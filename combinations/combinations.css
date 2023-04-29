@@ -1,177 +1,201 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
 body {
-    font-family: 'Montserrat', 'Fraunces', sans-serif;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    height: 100vh;
-    background-image: url(images/background.jpeg);
-    background-repeat: no-repeat; 
-    background-size: cover;
+  font-family: "Montserrat", "Fraunces", sans-serif;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  background-image: url(images/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
-    max-width: 1360px;
-    max-height: 768px;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 0px;
-
-    /* glassmorphysm */
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 8px );
-    -webkit-backdrop-filter: blur( 8px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  max-width: 1360px;
+  max-height: 768px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+  /* glassmorphysm */
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* remove default arrow on dropdown */
+}
+main h1 {
+  grid-area: 1/1/2/3;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  justify-self: center;
+  align-self: flex-end;
+  font-weight: 700;
+  line-height: 1.5;
+  max-width: 600px;
+}
+main #firstSubstance {
+  grid-area: 2/1/3/2;
+  height: 80px;
+  width: 300px;
+  align-self: center;
+  justify-self: right;
+  border-radius: 20px;
+  padding-inline: 20px;
+  font-size: 24px;
+  color: hsla(246, 100%, 68%, 0.776);
+  font-weight: 400;
+  border: 2px solid hsla(246, 100%, 68%, 0.776);
+  background-image: linear-gradient(45deg, transparent 50%, hsla(246, 100%, 68%, 0.776) 50%), linear-gradient(135deg, hsla(246, 100%, 68%, 0.776) 50%, transparent 50%), linear-gradient(to right, hsla(246, 100%, 68%, 0.776), #ccc);
+  background-position: calc(100% - 30px) calc(1em + 10px), calc(100% - 20px) calc(1em + 10px), calc(100% - 2.5em) 0.3em;
+  background-size: 10px 10px, 10px 10px, 1px 2.5em;
+  background-repeat: no-repeat;
+  /* remove default arrow on dropdown */
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+main #secondSubstance {
+  grid-area: 2/2/3/3;
+  height: 80px;
+  width: 300px;
+  align-self: center;
+  justify-self: left;
+  border-radius: 20px;
+  padding-inline: 20px;
+  font-size: 24px;
+  color: hsla(246, 100%, 68%, 0.776);
+  font-weight: 400;
+  border: 2px solid hsla(246, 100%, 68%, 0.776);
+  background-image: linear-gradient(45deg, transparent 50%, hsla(246, 100%, 68%, 0.776) 50%), linear-gradient(135deg, hsla(246, 100%, 68%, 0.776) 50%, transparent 50%), linear-gradient(to right, hsla(246, 100%, 68%, 0.776), #ccc);
+  background-position: calc(100% - 30px) calc(1em + 10px), calc(100% - 20px) calc(1em + 10px), calc(100% - 2.5em) 0.3em;
+  background-size: 10px 10px, 10px 10px, 1px 2.5em;
+  background-repeat: no-repeat;
+  /* remove default arrow on dropdown */
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+main select::-ms-expand {
+  display: none;
+}
+main .buttonHolder {
+  grid-area: 3/1/4/3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+}
+main .buttonHolder button {
+  font-size: 44px;
+  background-color: hsla(246, 100%, 68%, 0.776);
+  border: 0;
+  border-radius: 40px;
+  max-width: 600px;
+  width: 100%;
+  padding: 10px;
+  color: white;
+}
+main .buttonHolder button:hover, main .buttonHolder button:active {
+  border: 1px solid white;
+}
+main .messageHolder {
+  grid-area: 1/3/5/4;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-inline: 40px;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(246, 100%, 68%, 0.776);
+  border-radius: 0 10px 10px 0;
+}
+main .messageHolder h4 {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+main .messageHolder p {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: left;
+}
+main .messageHolder .divider {
+  border: 1px solid white;
+  width: 100%;
+  margin-block: 50px;
+}
+main .messageHolder h3 {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
 }
 
-h1 {
-    grid-area: 1 / 1 / 2 / 3;
-    color: white;
-    font-size: 60px;
-    text-align: center;
-    justify-self: center;
-    align-self: flex-end;
-    font-weight: 700;
-    line-height: 1.5;
-    max-width: 600px;
-}
-
-#firstSubstance {
-    grid-area: 2 / 1 / 3 / 2;
-    height: 80px;
-    width: 300px;
-    align-self: center;
-    justify-self: right;
-    border-radius: 20px;
-    padding-inline: 20px;
-    font-size: 24px;
-    color: hsla(246, 100%, 68%, 0.776);
-    font-weight: 400;
-
-    border: 2px solid hsla(246, 100%, 68%, 0.776);
-
-    background-image:
-        linear-gradient(45deg, transparent 50%, hsla(246, 100%, 68%, 0.776) 50%),
-        linear-gradient(135deg, hsla(246, 100%, 68%, 0.776) 50%, transparent 50%),
-        linear-gradient(to right, hsla(246, 100%, 68%, 0.776), #ccc);
-    background-position:
-      calc(100% - 30px) calc(1em + 10px),
-      calc(100% - 20px) calc(1em + 10px),
-      calc(100% - 2.5em) 0.3em;
-    background-size:
-      10px 10px,
-      10px 10px,
-      1px 2.5em;
-    background-repeat: no-repeat;
-
-    /* remove default arrow on dropdown */
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-}
-
-#secondSubstance {
-    grid-area: 2 / 2 / 3 / 3;
-    height: 80px;
-    width: 300px;
-    align-self: center;
-    justify-self: left;
-    border-radius: 20px;
-    padding-inline: 20px;
-    font-size: 24px;
-    color: hsla(246, 100%, 68%, 0.776);
-    font-weight: 400;
-
-    border: 2px solid hsla(246, 100%, 68%, 0.776);
-
-    background-image:
-        linear-gradient(45deg, transparent 50%, hsla(246, 100%, 68%, 0.776) 50%),
-        linear-gradient(135deg, hsla(246, 100%, 68%, 0.776) 50%, transparent 50%),
-        linear-gradient(to right, hsla(246, 100%, 68%, 0.776), #ccc);
-    background-position:
-      calc(100% - 30px) calc(1em + 10px),
-      calc(100% - 20px) calc(1em + 10px),
-      calc(100% - 2.5em) 0.3em;
-    background-size:
-      10px 10px,
-      10px 10px,
-      1px 2.5em;
-    background-repeat: no-repeat;
-
-    /* remove default arrow on dropdown */
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-} 
-/* remove default arrow on dropdown */
-select::-ms-expand {
-    display: none;
-}
-
-.buttonHolder {
-    grid-area: 3 / 1 / 4 / 3;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-button {
-    font-size: 44px;
-    background-color: hsla(246, 100%, 68%, 0.776);
-    border: 0 solid rgba(255, 255, 255, 0);
-    border-radius: 40px;
-    max-width: 600px;
-    width: 100%;
-    padding: 10px;
-    color: white;
-}
-
-.messageHolder {
-    grid-area: 1 / 3 / 5 / 4;
+@media only screen and (max-width: 570px) {
+  body {
+    height: none;
+  }
+  main {
+    max-height: none;
+    border-radius: 0;
+    padding-block: 0;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    padding-inline: 40px;
-    width: 100%;
-    height: 100%;
+    align-items: center;
+    gap: 30px;
+  }
+  h1 {
+    margin-top: 40px;
+    font-size: 52px !important;
+    line-height: 1.2 !important;
+  }
+  #firstSubstance {
+    font-size: 20px !important;
+    padding-block: 15px;
+    background-position: calc(100% - 30px) calc(1em + 3px), calc(100% - 20px) calc(1em + 3px), calc(100% - 3em) 0.05em !important;
+  }
+  #secondSubstance {
+    font-size: 20px !important;
+    padding-block: 15px;
+    background-position: calc(100% - 30px) calc(1em + 3px), calc(100% - 20px) calc(1em + 3px), calc(100% - 3em) 0.05em !important;
+  }
+  .buttonHolder {
+    width: 60%;
+    justify-self: center;
+    margin-bottom: 40px;
+  }
+  .buttonHolder button {
+    font-size: 32px !important;
     background-color: hsla(246, 100%, 68%, 0.776);
-    border-radius: 0 10px 10px 0;
-}
-
-h4 {
-    color: white;
-    font-weight: 700;
-    font-size: 24px;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-p {
-    color: white;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: left;
-}
-
-.divider {
-    border: 1px solid white;
+    border: 0;
     width: 100%;
-    margin-block: 50px;
-}
-
-.messageHolder h3 {
+    padding: 20px;
     color: white;
-    font-size: 48px;
-    font-weight: 700;
-    text-align: center;
-}
+  }
+  .messageHolder {
+    align-items: center;
+    border-radius: 0 !important;
+    padding: 25px 50px 40px 50px !important;
+  }
+  .messageHolder h4 {
+    font-size: 22px !important;
+  }
+  .messageHolder p {
+    font-size: 18px !important;
+  }
+  .messageHolder h3 {
+    font-size: 32px !important;
+  }
+}/*# sourceMappingURL=combinations.css.map */
