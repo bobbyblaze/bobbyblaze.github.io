@@ -230,6 +230,8 @@ main {
 
         display: flex !important;
         flex-direction: column;
+        position: fixed;
+        overflow: hidden;
         align-items: center;
         justify-content: flex-start;
         gap: 50px !important;
@@ -238,7 +240,7 @@ main {
             display: flex !important;
             visibility: visible !important;
             position: absolute;
-            bottom: 30px;
+            bottom: 50px;
 
             -webkit-filter: invert(100%);
             filter: invert(100%);
@@ -300,7 +302,8 @@ main {
     .messageHolder {
         position: absolute;
         bottom: 0;
-        height: 100dvh;
+        height: 100dvh !important;
+        overflow: hidden;
         transition: translate 500ms ease-in-out;
         translate: 0 100%;
         align-items: center;
@@ -317,7 +320,7 @@ main {
             display: flex !important;
             visibility: visible !important;
             position: absolute;
-            top: 30px;
+            top: 50px;
             -webkit-filter: invert(100%);
             filter: invert(100%);
         }
