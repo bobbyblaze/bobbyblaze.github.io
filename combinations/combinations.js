@@ -45,16 +45,16 @@ var descriptions = [
     /* lsd */ "Môže spôsobiť silné vizuálne a sluchové halucinácie, zvýšenú vnímavosť a rýchle srdcové tepy, ale aj úzkosť, paranoidnosť a straty kontroly.",
     /* huby */ "Môžu spôsobiť zvýšenú vnímavosť, intenzívne vizuálne a sluchové halucinácie, ale aj nevoľnosť, záchvaty a zvýšenú srdcovú frekvenciu.",
     /* dmt */ "Môže spôsobiť zmenu vedomia, zvýšenú kreativitu a rýchle srdcové tepy, ale aj úzkosť, paniku a nekontrolované pocity strachu.",
-    /* meskalin */ "Môže viesť k vizuálnym halucináciám, zmene myslenia a zvýšenej citlivosti na zvuky a farby ale aj nevoľnosť a zvracanie.",
+    /* meskalin */ "Môže viesť k vizuálnym halucináciám, zmene myslenia a zvýšenej citlivosti na zvuky a farby, ale aj nevoľnosť a zvracanie.",
     /* DOx */ "Tieto syntetické psychedelické látky môžu spôsobiť intenzívne zážitky a zmeny vedomia, ale aj úzkosť, nevoľnosť a zhoršenú koordináciu.",
     /* NBOMe */ "Môžu viesť k vizuálnym halucináciám, zmenám myslenia a zvýšenej citlivosti na zvuky a farby, ale aj nevoľnosť, zvracanie a zhoršenú koordináciu.",
     /* 2C-x */ "Môžu viesť k vizuálnym halucináciám, zmenám vedomia a zvýšenej citlivosti na zvuky a farby, ale aj nevoľnosť a zhoršenú koordináciu.",
     /* 2C-T-x */ "Môžu viesť k vizuálnym halucináciám, zmenám vedomia a zvýšenej citlivosti na zvuky a farby, ale aj nevoľnosť a zhoršenú koordináciu",
     /* 5-MeO-x */ "Môžu viesť k vizuálnym halucináciám, zmenám vedomia a zvýšenej citlivosti na zvuky a farby, ale aj nevoľnosť, zvracanie a zhoršenú koordináciu.",
-    /* konope */ "Pravidelné užívanie konope môže viesť k poškodeniu kognitívnycôže spôsobiť zníženú koordináciu, úzkosť a zmenenú vnímavosť, ako aj zvýšenú tepovú frekvenciu, krvný tlak a suché ústa.",
+    /* konope */ "Môže spôsobiť zníženú koordináciu, úzkosť a zmenenú vnímavosť ako aj zvýšenú tepovú frekvenciu, krvný tlak a suché ústa.",
     /* ketamin */ "Môže spôsobiť pocit oddelenia od tela a okolitého sveta, zníženú citlivosť na bolesť a pocit eufórie, ale aj stratu pamäti a nepríjemné zážitky.",
-    /* MXE */ "Môže viesť k halucináciám, znecitliveniu, zníženiu koordinácie a zmene vedomia. Taktiež môže spôsobiť eufóriu, pocit odpočinku ale aj nevoľnosť a zvracanie.",
-    /* DXM */ "Môže viesť k halucináciám, znecitliveniu, zmene vedomia a zvýšenej citlivosti na zvuky a farby. Taktiež môže spôsobiť eufóriu ale aj nevoľnosť a zvracanie.",
+    /* MXE */ "Môže viesť k halucináciám, znecitliveniu, zníženiu koordinácie a zmene vedomia. Taktiež môže spôsobiť eufóriu, pocit odpočinku, ale aj nevoľnosť a zvracanie.",
+    /* DXM */ "Môže viesť k halucináciám, znecitliveniu, zmene vedomia a zvýšenej citlivosti na zvuky a farby. Taktiež môže spôsobiť eufóriu, ale aj nevoľnosť a zvracanie.",
     /* N2O */ "Známy aj ako \"smiechový plyn\", môže viesť k zmenám vedomia a pocitu eufórie. Taktiež môže spôsobiť výpadky pamäti, necitlivosť a zmätenosť, ale aj nevoľnosť a zvracanie.",
     /* amfetamin */ "Môže spôsobiť zvýšenie tepovej frekvencie, krvného tlaku a dýchania, zníženie chuti do jedla a zvýšenú bdelosť, ale aj úzkosť, paranoiu a agresivitu.",
     /* mdma */ "Môže spôsobiť zvýšenú energiu, zvýšené empatie a súcitu, ale aj nevoľnosť, záchvaty a zvýšenú srdcovú frekvenciu.",
@@ -62,11 +62,11 @@ var descriptions = [
     /* a-PVP */ "Môže viesť k zvýšeniu energie, zvýšeniu mozgovej činnosti a halucináciám. Taktiež môže spôsobiť eufóriu, ale aj zvýšený tlak krvi, zvýšený tep srdca a riziko infarktu.",
     /* 4-MMC */ "Môže viesť k zvýšeniu energie, zvýšeniu mozgovej činnosti a halucináciám. Taktiež môže spôsobiť eufóriu, ale aj zníženú inhibíciu, zvýšený tep srdca a krvný tlak, úzkosť a nespavosť.",
     /* kofein */ "Môže zvýšiť ostražitosť, energiu a tepovú frekvenciu, ako aj znížiť únavu, ale môže tiež spôsobiť nervozitu, záchvaty a gastrointestinálne problémy.",
-    /* alkohol */ "Môže spôsobiť alkoholickú intoxikáciu, ktorá sa prejavuje poruchou úsudku, strátou pamäti a zrakovej ostrosti, ako aj zníženou koordináciou pohybov a nesúvislou rečou.",
+    /* alkohol */ "Môže spôsobiť alkoholickú intoxikáciu, ktorá sa prejavuje poruchou úsudku, stratou pamäti a zrakovej ostrosti ako aj zníženou koordináciou pohybov a nesúvislou rečou.",
     /* GHB/GBL */ "Môžu spôsobiť zmiernenie úzkosti, zníženie inhibícií a pocit eufórie. Taktiež môžu spôsobiť znecitlivenie, zvýšenie závislosti a kómu.",
     /* opiaty */ "Môžu spôsobiť zníženie bolesti, pocit eufórie a úľavu od stresu, ale aj ospalosť, zhoršenú koordináciu a pocit nevoľnosti.",
     /* Tramadol */ "Môže viesť k úľave od bolesti, zmierneniu úzkosti a zvýšeniu nálady. Taktiež môže spôsobiť ospalosť, závraty, nevoľnosť, zvracanie a zvýšené riziko závislosti.",
-    /* benzo */ "Môžu spôsobiť ospalosť, závraty a zmätenosť, ako aj zníženú koordináciu a spomalenie reakčného času.",
+    /* benzo */ "Môžu spôsobiť ospalosť, závraty a zmätenosť ako aj zníženú koordináciu a spomalenie reakčného času.",
     /* MAOI */ "Môžu viesť k zvýšeniu nálady, zníženiu úzkosti a zvýšeniu mozgovej činnosti. Taktiež môžu spôsobiť ospalosť, závraty, nevoľnosť, zvracanie a zvýšené riziko závažných vedľajších účinkov, ako je hypertenzia.",
     /* SSRI */ "Môžu viesť k zvýšeniu nálady, zníženiu úzkosti a zvýšeniu mozgovej činnosti. Taktiež môžu spôsobiť nevoľnosť, zvracanie, nervozitu, bolesti hlavy a zvýšené riziko vedľajších účinkov, ako je riziko závažných zmien nálady a správania."
 ];
@@ -83,6 +83,10 @@ var descriptionTwo = document.getElementById("substance2text");
 var finalMessage = document.getElementById("verdict");
 //button for add click listener
 var buttonCalculate = document.getElementById("calculate");
+var arrowDown = document.getElementById("arrowDown");
+var arrowUp = document.getElementById("arrowUp");
+//message holder - for moving
+var messageHolder = document.getElementById("msgHolder");
 var primarySelected;
 var secondarySelected;
 var finalVerdict;
@@ -154,6 +158,7 @@ function verdict(num) {
     }
     finalMessage.innerHTML = finalVerdict;
 }
+//main functionality starter 
 buttonCalculate.addEventListener("click", function () {
     if (primarySelected == secondarySelected) {
         finalVerdict = "Pohodička";
@@ -175,4 +180,13 @@ buttonCalculate.addEventListener("click", function () {
         //write description for 
         description(primarySelected, secondarySelected);
     }
+});
+//anchor scroll - add clicked class 
+//move up
+arrowDown.addEventListener("click", function () {
+    messageHolder.classList.add('clickedDown');
+});
+//move down
+arrowUp.addEventListener("click", function () {
+    messageHolder.classList.remove('clickedDown');
 });

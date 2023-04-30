@@ -210,7 +210,8 @@ main {
 @media only screen and (max-width: 570px) {
 
     body {
-        height: none
+        height: none;
+        scroll-behavior: smooth;
     }
 
     main {
@@ -224,7 +225,7 @@ main {
     }
 
     .wrapper {
-        height: 100vh !important;
+        height: 100% !important;
         margin: auto;
 
         display: flex !important;
@@ -296,12 +297,18 @@ main {
     .messageHolder {
         position: absolute;
         bottom: 0;
-        height: 100vh;
-        translate: 0 100vh;
+        height: 100%;
+        transition: translate 500ms ease-in-out;
+        translate: 0 100%;
         align-items: center;
         border-radius: 0!important;
         padding: 25px 50px 40px 50px!important;
         background-color: $purple-non-transparent !important;
+
+        &.clickedDown {
+            transition: translate 500ms ease-in-out;
+            translate: 0 0;
+        }
 
         .svgUp {
             display: flex !important;
