@@ -225,7 +225,7 @@ main {
     }
 
     .wrapper {
-        height: 100dvh !important;
+        height: 100svh !important;
         margin: auto;
 
         display: flex !important;
@@ -240,7 +240,7 @@ main {
             display: flex !important;
             visibility: visible !important;
             position: absolute;
-            bottom: 50px;
+            bottom: 30px;
 
             -webkit-filter: invert(100%);
             filter: invert(100%);
@@ -305,7 +305,7 @@ main {
         height: 100dvh !important;
         overflow: hidden;
         transition: translate 500ms ease-in-out;
-        translate: 0 100%;
+        translate: 0 100dvh;
         align-items: center;
         border-radius: 0!important;
         padding: 25px 50px 40px 50px!important;
@@ -320,7 +320,7 @@ main {
             display: flex !important;
             visibility: visible !important;
             position: absolute;
-            top: 50px;
+            top: 30px;
             -webkit-filter: invert(100%);
             filter: invert(100%);
         }
