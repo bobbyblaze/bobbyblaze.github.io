@@ -184,6 +184,7 @@ buttonCalculate.addEventListener("click", function() {
 
         //write description for 
         description(primarySelected, secondarySelected);
+        messageHolder.classList.add('clickedDown');
     } else {
         //find index of substance combination
         findNumber(primarySelected, secondarySelected);
@@ -197,15 +198,22 @@ buttonCalculate.addEventListener("click", function() {
 
         //write description for 
         description(primarySelected, secondarySelected);
+        messageHolder.classList.add('clickedDown');
     }
 });
 
 //anchor scroll - add clicked class 
-//move up
+//move down
 arrowDown.addEventListener("click", function() {
     messageHolder.classList.add('clickedDown');
 });
-//move down
+//move up
 arrowUp.addEventListener("click", function() {
     messageHolder.classList.remove('clickedDown');
 });
+
+const onScroll = () => {
+    if (scroll) {
+        messageHolder.classList.remove('clickedDown');
+    }
+}

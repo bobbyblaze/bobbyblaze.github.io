@@ -168,6 +168,7 @@ buttonCalculate.addEventListener("click", function () {
         substanceTitleTwo.innerHTML = secondarySelected;
         //write description for 
         description(primarySelected, secondarySelected);
+        messageHolder.classList.add('clickedDown');
     }
     else {
         //find index of substance combination
@@ -179,14 +180,20 @@ buttonCalculate.addEventListener("click", function () {
         substanceTitleTwo.innerHTML = secondarySelected;
         //write description for 
         description(primarySelected, secondarySelected);
+        messageHolder.classList.add('clickedDown');
     }
 });
 //anchor scroll - add clicked class 
-//move up
+//move down
 arrowDown.addEventListener("click", function () {
     messageHolder.classList.add('clickedDown');
 });
-//move down
+//move up
 arrowUp.addEventListener("click", function () {
     messageHolder.classList.remove('clickedDown');
 });
+var onScroll = function () {
+    if (scroll) {
+        messageHolder.classList.remove('clickedDown');
+    }
+};

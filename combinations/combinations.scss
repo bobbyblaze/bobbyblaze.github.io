@@ -302,11 +302,11 @@ main {
     .messageHolder {
         position: absolute;
         bottom: 0;
-        height: 100dvh !important;
+        height: 100% !important;
         overflow: hidden;
         transition: translate 500ms ease-in-out;
-        translate: 0 100dvh;
-        align-items: center;
+        translate: 0 100%;
+        align-items: left;
         border-radius: 0!important;
         padding: 25px 50px 40px 50px!important;
         background-color: $purple-non-transparent !important;
@@ -323,12 +323,22 @@ main {
             top: 30px;
             -webkit-filter: invert(100%);
             filter: invert(100%);
+            align-self: center;
         }
 
-        h4 {font-size: 22px !important;}
+        h4 {font-size: 22px !important; align-self: left !important;}
+
+        #substance1 {
+            margin-top: 80px !important; 
+        }
         
         p {font-size: 18px !important;}
         
         h3 {font-size: 32px !important;}
+
+        .divider {
+            margin-block: 40px !important;
+        }
+
     }
 }

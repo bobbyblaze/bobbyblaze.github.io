@@ -236,11 +236,11 @@ main .messageHolder h3 {
   .messageHolder {
     position: absolute;
     bottom: 0;
-    height: 100dvh !important;
+    height: 100% !important;
     overflow: hidden;
     transition: translate 500ms ease-in-out;
-    translate: 0 100dvh;
-    align-items: center;
+    translate: 0 100%;
+    align-items: left;
     border-radius: 0 !important;
     padding: 25px 50px 40px 50px !important;
     background-color: hsl(246, 100%, 68%) !important;
@@ -255,14 +255,22 @@ main .messageHolder h3 {
     position: absolute;
     top: 30px;
     filter: invert(100%);
+    align-self: center;
   }
   .messageHolder h4 {
     font-size: 22px !important;
+    align-self: left !important;
+  }
+  .messageHolder #substance1 {
+    margin-top: 80px !important;
   }
   .messageHolder p {
     font-size: 18px !important;
   }
   .messageHolder h3 {
     font-size: 32px !important;
+  }
+  .messageHolder .divider {
+    margin-block: 40px !important;
   }
 }/*# sourceMappingURL=combinations.css.map */
