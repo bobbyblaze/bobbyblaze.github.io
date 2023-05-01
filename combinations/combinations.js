@@ -192,8 +192,3 @@ arrowDown.addEventListener("click", function () {
 arrowUp.addEventListener("click", function () {
     messageHolder.classList.remove('clickedDown');
 });
-var onScroll = function () {
-    if (scroll) {
-        messageHolder.classList.remove('clickedDown');
-    }
-};
