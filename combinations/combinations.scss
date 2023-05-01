@@ -332,9 +332,6 @@ main {
             display: block !important;
             visibility: visible !important;
         }
-
-        
-        
     }
 }
 
@@ -378,68 +375,68 @@ main {
             -webkit-filter: invert(100%);
             filter: invert(100%);
         }
-    }
 
-    h1 {
-        margin-top: 50px !important;
-        margin-bottom: 10px !important;
-        font-size: 50px !important;
-        line-height: 1.2 !important;
-        filter: drop-shadow(1px 2px 3px #898989b0);
-    }
-
-    #firstSubstance {
-        font-size: 20px !important;
-        height: 70px !important;
-        margin: 0 !important;
-
-        background-position:
-        calc(100% - 30px) calc(1em + 10px),
-        calc(100% - 20px) calc(1em + 10px),
-        calc(100% - 3em) 0.4em !important;
-    }
-
-    #secondSubstance {
-        font-size: 20px !important;
-        height: 70px !important;
-        margin: 0 !important;
-
-        background-position:
-        calc(100% - 30px) calc(1em + 10px),
-        calc(100% - 20px) calc(1em + 10px),
-        calc(100% - 3em) 0.4em !important;
-    }
-
-    .buttonHolder {
-        width: 70%;
-        min-width: 260px;
-        max-width: 320px;
-        margin-top: 20px !important;
-        margin-bottom: 60px;
-
-        button {
-            font-size: 32px !important;
-            background-color: $purple;
-            border: 0;
-            width: 100%;
-            padding: 20px;
-            color: white;
-            filter: drop-shadow(1px 2px 3px #3a437b94);
-
-            &:active, &:hover {
-                border: none !important;
+        h1 {
+            margin-top: 50px !important;
+            margin-bottom: 10px !important;
+            font-size: 50px !important;
+            line-height: 1.2 !important;
+            filter: drop-shadow(1px 2px 3px #898989b0);
+        }
+    
+        #firstSubstance {
+            font-size: 20px !important;
+            height: 70px !important;
+            margin: 0 !important;
+    
+            background-position:
+            calc(100% - 30px) calc(1em + 10px),
+            calc(100% - 20px) calc(1em + 10px),
+            calc(100% - 3em) 0.4em !important;
+        }
+    
+        #secondSubstance {
+            font-size: 20px !important;
+            height: 70px !important;
+            margin: 0 !important;
+    
+            background-position:
+            calc(100% - 30px) calc(1em + 10px),
+            calc(100% - 20px) calc(1em + 10px),
+            calc(100% - 3em) 0.4em !important;
+        }
+    
+        .buttonHolder {
+            width: 70%;
+            min-width: 260px;
+            max-width: 320px;
+            margin-top: 20px !important;
+            margin-bottom: 60px;
+    
+            button {
+                font-size: 32px !important;
+                background-color: $purple;
+                border: 0;
+                width: 100%;
+                padding: 20px;
+                color: white;
+                filter: drop-shadow(1px 2px 3px #3a437b94);
+    
+                &:active, &:hover {
+                    border: none !important;
+                }
             }
         }
     }
 
     .messageHolder {
+        display: flex !important;
         position: absolute;
         bottom: 0;
         height: 100% !important;
         overflow: hidden;
         transition: translate 500ms ease-in-out;
         translate: 0 100%;
-        align-items: left;
         border-radius: 0!important;
         padding: 25px 50px 40px 50px!important;
         background-color: $purple-non-transparent !important;
@@ -459,19 +456,23 @@ main {
             align-self: center;
         }
 
-        h4 {font-size: 22px !important; align-self: left !important;}
+        h4 {font-size: 22px !important; align-self: flex-start !important;}
 
-        #substance1 {
-            margin-top: 80px !important; 
-        }
+        #substance1 {margin-top: 80px !important;}
         
         p {font-size: 18px !important;}
         
         h3 {font-size: 32px !important;}
 
         .divider {
-            margin-block: 40px !important;
+            margin-block: 40px !important; 
+            display: flex !important; 
+            visibility: visible !important;
         }
 
+        .dividerVertical {
+            display: none !important;
+            visibility: hidden !important;
+        }
     }
 }
