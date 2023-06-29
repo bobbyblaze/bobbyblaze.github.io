@@ -167,7 +167,7 @@ main .messageHolder h3 {
   text-align: center;
 }
 
-@media only screen and (max-width: 1120px) {
+@media (max-width: 1120px) {
   body {
     height: none;
     scroll-behavior: smooth;
@@ -285,7 +285,7 @@ main .messageHolder h3 {
     visibility: visible !important;
   }
 }
-@media only screen and (max-width: 570px) {
+@media (max-width: 570px) {
   body {
     height: none;
     scroll-behavior: smooth;
@@ -299,52 +299,52 @@ main .messageHolder h3 {
     align-items: center;
     gap: 30px;
   }
-  .wrapper {
-    height: 100svh !important;
+  main .wrapper {
+    height: 100svh;
     margin: auto;
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     position: fixed;
     overflow: hidden;
     align-items: center;
     justify-content: flex-start;
-    gap: 50px !important;
+    gap: 50px;
   }
-  .wrapper .svgDown {
-    display: flex !important;
-    visibility: visible !important;
+  main .wrapper .svgDown {
+    display: flex;
+    visibility: visible;
     position: absolute;
     bottom: 30px;
     filter: invert(100%);
   }
-  .wrapper h1 {
-    margin-top: 50px !important;
-    margin-bottom: 10px !important;
-    font-size: 50px !important;
-    line-height: 1.2 !important;
+  main .wrapper h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 1.2;
     filter: drop-shadow(1px 2px 3px rgba(137, 137, 137, 0.6901960784));
   }
-  .wrapper #firstSubstance {
-    font-size: 20px !important;
-    height: 70px !important;
-    margin: 0 !important;
-    background-position: calc(100% - 30px) calc(1em + 10px), calc(100% - 20px) calc(1em + 10px), calc(100% - 3em) 0.4em !important;
+  main .wrapper #firstSubstance {
+    font-size: 20px;
+    height: 70px;
+    margin: 0;
+    background-position: calc(100% - 30px) calc(1em + 10px), calc(100% - 20px) calc(1em + 10px), calc(100% - 3em) 0.4em;
   }
-  .wrapper #secondSubstance {
-    font-size: 20px !important;
-    height: 70px !important;
-    margin: 0 !important;
-    background-position: calc(100% - 30px) calc(1em + 10px), calc(100% - 20px) calc(1em + 10px), calc(100% - 3em) 0.4em !important;
+  main .wrapper #secondSubstance {
+    font-size: 20px;
+    height: 70px;
+    margin: 0;
+    background-position: calc(100% - 30px) calc(1em + 10px), calc(100% - 20px) calc(1em + 10px), calc(100% - 3em) 0.4em;
   }
-  .wrapper .buttonHolder {
+  main .wrapper .buttonHolder {
     width: 70%;
     min-width: 260px;
     max-width: 320px;
-    margin-top: 20px !important;
+    margin-top: 20px;
     margin-bottom: 60px;
   }
-  .wrapper .buttonHolder button {
-    font-size: 32px !important;
+  main .wrapper .buttonHolder button {
+    font-size: 32px;
     background-color: hsla(246, 100%, 68%, 0.776);
     border: 0;
     width: 100%;
@@ -352,10 +352,10 @@ main .messageHolder h3 {
     color: white;
     filter: drop-shadow(1px 2px 3px rgba(58, 67, 123, 0.5803921569));
   }
-  .wrapper .buttonHolder button:active, .wrapper .buttonHolder button:hover {
-    border: none !important;
+  main .wrapper .buttonHolder button:active, main .wrapper .buttonHolder button:hover {
+    border: none;
   }
-  .messageHolder {
+  main .messageHolder {
     display: flex !important;
     position: absolute;
     bottom: 0;
@@ -367,11 +367,11 @@ main .messageHolder h3 {
     padding: 25px 50px 40px 50px !important;
     background-color: hsl(246, 100%, 68%) !important;
   }
-  .messageHolder.clickedDown {
+  main .messageHolder.clickedDown {
     transition: translate 500ms ease-in-out;
     translate: 0 0;
   }
-  .messageHolder .svgUp {
+  main .messageHolder .svgUp {
     display: flex !important;
     visibility: visible !important;
     position: absolute;
@@ -379,25 +379,25 @@ main .messageHolder h3 {
     filter: invert(100%);
     align-self: center;
   }
-  .messageHolder h4 {
+  main .messageHolder h4 {
     font-size: 22px !important;
     align-self: flex-start !important;
   }
-  .messageHolder #substance1 {
+  main .messageHolder #substance1 {
     margin-top: 80px !important;
   }
-  .messageHolder p {
+  main .messageHolder p {
     font-size: 18px !important;
   }
-  .messageHolder h3 {
+  main .messageHolder h3 {
     font-size: 32px !important;
   }
-  .messageHolder .divider {
+  main .messageHolder .divider {
     margin-block: 40px !important;
     display: flex !important;
     visibility: visible !important;
   }
-  .messageHolder .dividerVertical {
+  main .messageHolder .dividerVertical {
     display: none !important;
     visibility: hidden !important;
   }

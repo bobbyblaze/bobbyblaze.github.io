@@ -212,7 +212,7 @@ main {
 }
 
 //small screen - not mobile 
-@media only screen and (max-width: 1120px) {
+@media (max-width: 1120px) {
 
     body {
         height: none;
@@ -337,7 +337,7 @@ main {
 
 
 //mobile optimization
-@media only screen and (max-width: 570px) {
+@media (max-width: 570px) {
 
     body {
         height: none;
@@ -352,127 +352,127 @@ main {
         flex-direction: column;
         align-items: center;
         gap: 30px;
-    }
-
-    .wrapper {
-        height: 100svh !important;
-        margin: auto;
-
-        display: flex !important;
-        flex-direction: column;
-        position: fixed;
-        overflow: hidden;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 50px !important;
-
-        .svgDown {
-            display: flex !important;
-            visibility: visible !important;
-            position: absolute;
-            bottom: 30px;
-
-            -webkit-filter: invert(100%);
-            filter: invert(100%);
-        }
-
-        h1 {
-            margin-top: 50px !important;
-            margin-bottom: 10px !important;
-            font-size: 50px !important;
-            line-height: 1.2 !important;
-            filter: drop-shadow(1px 2px 3px #898989b0);
-        }
     
-        #firstSubstance {
-            font-size: 20px !important;
-            height: 70px !important;
-            margin: 0 !important;
+        .wrapper {
+            height: 100svh;
+            margin: auto;
     
-            background-position:
-            calc(100% - 30px) calc(1em + 10px),
-            calc(100% - 20px) calc(1em + 10px),
-            calc(100% - 3em) 0.4em !important;
-        }
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            overflow: hidden;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 50px;
     
-        #secondSubstance {
-            font-size: 20px !important;
-            height: 70px !important;
-            margin: 0 !important;
+            .svgDown {
+                display: flex ;
+                visibility: visible;
+                position: absolute;
+                bottom: 30px;
     
-            background-position:
-            calc(100% - 30px) calc(1em + 10px),
-            calc(100% - 20px) calc(1em + 10px),
-            calc(100% - 3em) 0.4em !important;
-        }
+                -webkit-filter: invert(100%);
+                filter: invert(100%);
+            }
     
-        .buttonHolder {
-            width: 70%;
-            min-width: 260px;
-            max-width: 320px;
-            margin-top: 20px !important;
-            margin-bottom: 60px;
-    
-            button {
-                font-size: 32px !important;
-                background-color: $purple;
-                border: 0;
-                width: 100%;
-                padding: 20px;
-                color: white;
-                filter: drop-shadow(1px 2px 3px #3a437b94);
-    
-                &:active, &:hover {
-                    border: none !important;
+            h1 {
+                margin-top: 50px;
+                margin-bottom: 10px;
+                font-size: 50px;
+                line-height: 1.2;
+                filter: drop-shadow(1px 2px 3px #898989b0);
+            }
+        
+            #firstSubstance {
+                font-size: 20px;
+                height: 70px;
+                margin: 0;
+        
+                background-position:
+                calc(100% - 30px) calc(1em + 10px),
+                calc(100% - 20px) calc(1em + 10px),
+                calc(100% - 3em) 0.4em;
+            }
+        
+            #secondSubstance {
+                font-size: 20px;
+                height: 70px;
+                margin: 0;
+        
+                background-position:
+                calc(100% - 30px) calc(1em + 10px),
+                calc(100% - 20px) calc(1em + 10px),
+                calc(100% - 3em) 0.4em;
+            }
+        
+            .buttonHolder {
+                width: 70%;
+                min-width: 260px;
+                max-width: 320px;
+                margin-top: 20px;
+                margin-bottom: 60px;
+        
+                button {
+                    font-size: 32px;
+                    background-color: $purple;
+                    border: 0;
+                    width: 100%;
+                    padding: 20px;
+                    color: white;
+                    filter: drop-shadow(1px 2px 3px #3a437b94);
+        
+                    &:active, &:hover {
+                        border: none;
+                    }
                 }
             }
         }
-    }
-
-    .messageHolder {
-        display: flex !important;
-        position: absolute;
-        bottom: 0;
-        height: 100% !important;
-        overflow: hidden;
-        transition: translate 500ms ease-in-out;
-        translate: 0 100%;
-        border-radius: 0!important;
-        padding: 25px 50px 40px 50px!important;
-        background-color: $purple-non-transparent !important;
-
-        &.clickedDown {
-            transition: translate 500ms ease-in-out;
-            translate: 0 0;
-        }
-
-        .svgUp {
+    
+        .messageHolder {
             display: flex !important;
-            visibility: visible !important;
             position: absolute;
-            top: 30px;
-            -webkit-filter: invert(100%);
-            filter: invert(100%);
-            align-self: center;
-        }
-
-        h4 {font-size: 22px !important; align-self: flex-start !important;}
-
-        #substance1 {margin-top: 80px !important;}
-        
-        p {font-size: 18px !important;}
-        
-        h3 {font-size: 32px !important;}
-
-        .divider {
-            margin-block: 40px !important; 
-            display: flex !important; 
-            visibility: visible !important;
-        }
-
-        .dividerVertical {
-            display: none !important;
-            visibility: hidden !important;
+            bottom: 0;
+            height: 100% !important;
+            overflow: hidden;
+            transition: translate 500ms ease-in-out;
+            translate: 0 100%;
+            border-radius: 0 !important;
+            padding: 25px 50px 40px 50px!important;
+            background-color: $purple-non-transparent !important;
+    
+            &.clickedDown {
+                transition: translate 500ms ease-in-out;
+                translate: 0 0;
+            }
+    
+            .svgUp {
+                display: flex !important;
+                visibility: visible !important;
+                position: absolute;
+                top: 30px;
+                -webkit-filter: invert(100%);
+                filter: invert(100%);
+                align-self: center;
+            }
+    
+            h4 {font-size: 22px !important; align-self: flex-start !important;}
+    
+            #substance1 {margin-top: 80px !important;}
+            
+            p {font-size: 18px !important;}
+            
+            h3 {font-size: 32px !important;}
+    
+            .divider {
+                margin-block: 40px !important; 
+                display: flex !important; 
+                visibility: visible !important;
+            }
+    
+            .dividerVertical {
+                display: none !important;
+                visibility: hidden !important;
+            }
         }
     }
 }

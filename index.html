@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/binary-icon-32x32.png">
+  <link rel="icon" type="image/webp" sizes="32x32" href="./images/binary-icon-32x32.webp">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
   
@@ -12,43 +12,81 @@
 </head>
 <body>
   <div class="cursor"></div>
-  <header>
-      <span>
-        Bobby Blaze
-      </span>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="https://github.com/bobbyblaze"><img src="./images/github.png" alt="github"></a>
-      </nav>
-  </header>
+  <nav>
+    <div class="navbar">
+      <div class="container nav-container">
+          <input class="checkbox" type="checkbox" aria-label="Hamburger menu" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>  
+        <div class="logo">
+          <h1>Róbert Blažek</h1>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <button id="contactButton">Contact</button>
+          <li><a href="https://github.com/bobbyblaze"><img src="./images/github.webp" alt="github"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Leave me a message</h1>
+        <span class="close">&times;</span>
+      </div>
+      <div class="contact-methods">
+        <div class="contact">
+          <h2>Róbert Blažek</h2>
+          <a href = "mailto: robertblazek@gmail.com">robertblazek@gmail.com</a>
+          <a href = "mailto: info@robertblazek.com">info@robertblazek.com</a>
+          <a href = "tel: +421911260507">+421 911 260 507</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/bobbyblaze"><img id="github" src="./images/github.webp" alt="github"></a>
+          <a href="https://www.linkedin.com/in/r%C3%B3bert-bla%C5%BEek-a6815b153/"><img src="./images/linkedinIcon.png" alt="linkedin"></a>
+          <a href="https://www.instagram.com/robert_blazek/"><img src="./images/instagramIcon.png" alt="instagram"></a>
+          <a href="https://wa.me/421911260507"><img src="./images/whatsappIcon.png" alt="Chat on WhatsApp"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section class="main" id="home">
     <main>
-      <h1>The projects I have worked on.</h1>
-      <a href="https://vlastniapartman.sk/" target="_blank">
+      <h1>Latest Projects</h1>
+      <a href="http://robertblazek.com/combinations/combinations.html" target="_self" aria-label="Take a look at the substance calculator.">
         <div class="web-window one">
+          <div class="border"></div>
+          <div class="description">
+            <h2>Polysubstance Combinator</h2>
+            <p>Website I developed using HTML, SCSS, TS. It calculates outcomes of substance combinations.</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://therapyvlado.robertblazek.com" target="_self" aria-label="Take a look at the website.">
+        <div class="web-window two">
+          <div class="border"></div>
+          <div class="description">
+            <h2>Therapy Vlado</h2>
+            <p>Website I developed using Wordpress with Oxygen (HTML, CSS, JS, PHP) and Advanced Custom Fields.</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://vlastniapartman.sk/" target="_blank" aria-label="Take a look at the website.">
+        <div class="web-window three">
+          <div class="border"></div>
           <div class="description">
             <h2>Apartmány Konopiská</h2>
             <p>Website I co-developed using Wordpress with Oxygen (HTML, CSS, JS) and Advanced Custom Fields.</p>
           </div>
         </div>
       </a>
-      <a href="https://bobbyblaze.github.io/" target="_self">
-        <div class="web-window two">
-          <div class="description">
-            <h2>Upcoming Web</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, rerum architecto distinctio tempore</p>
-          </div>
-        </div>
-      </a>
-      <a href="https://bobbyblaze.github.io/" target="_self">
-        <div class="web-window three">
-          <div class="description">
-            <h2>Upcoming Web</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, rerum architecto distinctio tempore</p>
-        </div>
-      </a>
-    </div>
     </main>
   </section>
   <section class="projects" id="projects">
